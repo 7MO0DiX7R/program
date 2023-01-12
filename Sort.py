@@ -1,12 +1,12 @@
-def bubble_sort(our_list):
-    for i in range(len(our_list)):
-        for j in range(len(our_list) - 1):
-            if our_list[j] > our_list[j + 1]:
-                our_list[j], our_list[j + 1] = our_list[j + 1], our_list[j]
+def bubble_sort(list):
+    for i in range(len(list)):
+        for j in range(len(list) - 1):
+            if list[j] > list[j + 1]:
+                list[j], list[j + 1] = list[j + 1], list[j]
 
-    return our_list
+    return list
 
 
-our_list = [113, 639, 103, 126, 899, 788, 665, 1]
-our_list = bubble_sort(our_list)
-print(our_list)
+list = [113, 639, 103, 126, 899, 788, 665, 1]
+list = bubble_sort(list)
+print(list)

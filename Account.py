@@ -1,4 +1,4 @@
-account ={"hundaol" : "hundaol123"}
+account = {"hundaol": "hundaol123"}
 logged_in = False
 while True:
     menyval = input(
@@ -10,8 +10,8 @@ while True:
     )
 
     if menyval == "1":
-        user = input("username?")
-        account[user] = (input("password?"))
+        username = input("username?")
+        account[username] = input("password?")
 
         # TODO Skapa ett konto genom att lägga till ett key-value par i accounts
         # username = key, password = value
@@ -20,14 +20,10 @@ while True:
 
     elif menyval == "2":
         while True:
-            login=input("enter your username")
-            if login == user:
+            login = input("enter your username")
+            if login == username:
                 print("Enter password:")
-            
 
-
-        
-        
         # TODO Användaren ska få logga in med username och password
         # Ändra variabeln logged_in till True om de lyckas logga in
         # Bonus: Ge användaren ett visst antal försök att logga in
